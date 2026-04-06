@@ -1,0 +1,156 @@
+1. What will be the output of the following code?
+#include <stdio.h>
+int main(){
+    int a = 15%4;
+    printf("%d",a);
+}
+   A) 1
+   B) 2
+   C) 3
+   D) 4
+Solve: C
+Explanation: % (Modular operator) এর সাহায্যে আমরা দুটি সংখ্যার ভাগশেষ বের করতে পারি। এক্ষেত্রে ১৫ কে ৪ দিয়ে ভাগ করলে ভাগশেষ আসে ৩। 
+
+2. What will be the output of the following code?
+#include <stdio.h>
+int main(){
+    double a = 15/4;
+    printf("%lf",a);
+}
+   A) 3
+   B) 3.000000
+   C) 3.750000
+   D) 4
+Solve: B
+Explanation: Module 2.1 - Arithmetic Operators এ আমরা দেখেছি , 
+যদি আমরা দুটি integer নাম্বার  কে ভাগ করি  সেক্ষেত্রে সংখ্যা দুটির ভাগফল যদি পূর্ণ সংখ্যা না হয় তবে , দশমিকের পরের অংশ বাদ পড়ে যায়। এর কারণ হলো , দুটি integer নাম্বার কে ভাগ করলে কম্পাইলার ভাগফল টিকেও integer নাম্বার হিসেবে ডিল করে। যার কারণে ভাগফল টি integer নাম্বারে রাউন্ড হয়ে যায়। 
+
+3. 20 > 10 && 10 < 20, Is it true or false?
+   A) True
+   B) False
+Solve: A
+Explanation:   এখানে condition দুটির মাঝখানে And operator ব্যবহার  করা হয়েছে। অর্থাৎ উক্ত দুটি কন্ডিশন True হলে overall বিষয়টি True হবে । যেহেতু উক্ত দুটি condition ই True , তাই এর উত্তর হবে True. 
+
+4. What will be the output of the following code?
+#include <stdio.h>
+int main(){
+    int a = 6;
+
+    if(a>5){
+        printf("hi");
+    }
+    else if(a>3){
+        printf("bye");
+    }
+}
+
+
+   A) bye
+   B) hi
+Solve: B
+Explanation:  এটি একটি if else ladder. এখানে সিরিয়ালি একটির পর একটি কন্ডিশন চেক হবে এবং যেকোনো একটি কন্ডিশন True হলে ঐ ব্লক টি execution এর মাধ্যমে ladder এর কাজ শেষ হবে। এক্ষেত্রে প্রথম কন্ডিশন টি True হয়েছে এবং hi প্রিন্ট হয়েছে এবং ladder বাকি অংশটূকু আর প্রিন্ট হয় নি।    
+
+5. What will be the output of the following code?
+#include <stdio.h>
+
+int main() {
+    int num = 5;
+
+    if (num > 0) {
+        if (num < 10){
+            printf("Small positive number\n");
+         }
+    }
+
+    return 0;
+}
+
+   A) Error in code as there’s no else statement
+   B) No output
+   C) Small positive number
+Solve: C
+Explanation:   এটি nested if else এর একটি example. এখানে প্রথম কন্ডিশন টি True হয়েছে এবং সেই ব্লকের statement গুলো execution হবে। সেই ব্লকের  মধ্যে রয়েছে আরো একটি if ব্লক। if condition টি True , যার কারণে এর ভিতরের statement গুলো execution হবে। 
+
+
+6. What will be the output of the following code?
+#include <stdio.h>
+int main(){
+    int x = 10;
+    int y = 12;
+    if(x>=y || x<=y){
+        printf("hi");
+    }
+    else{
+        printf("hello");
+    }
+}
+
+   A) hi
+   B) hello
+   C) None of the above.
+   D) All of the above.
+Solve: A
+Explanation:   এখানে condition দুটির মাঝখানে OR operator ব্যবহার  করা হয়েছে। অর্থাৎ উক্ত দুটি কন্ডিশন এর যেকোন একটি True হলে overall বিষয়টি True হবে । যেহেতু উক্ত দুটি condition এর মধ্যে দ্বিতীয় কন্ডিশন ( x<=y) টি  True , তাই এর উত্তর হবে True. 
+
+
+7. What will be the output of the following code?
+#include <stdio.h>
+int main(){
+    int x = 10;
+    int y = 12;
+    if(x>=y || x<=y)
+    {
+        printf("hi ");
+    }
+  
+    printf("hello");
+}
+
+
+   A) hi hello
+   B) hello hi
+   C) hihello
+   D) hello
+Solve: A
+Explanation:   এখানে condition দুটির মাঝখানে OR operator ব্যবহার  করা হয়েছে। অর্থাৎ উক্ত দুটি কন্ডিশন এর যেকোন একটি True হলে overall বিষয়টি True হবে । যেহেতু উক্ত দুটি condition এর মধ্যে দ্বিতীয় কন্ডিশন ( x<=y) টি  True , তাই এর উত্তর হবে True. এবং পরবর্তীতে if conditon শেষে একটি print স্টেট্মেন্ট execution হয়েছে। 
+
+  
+8. Which of the following is not a logical or relational operator?
+   A) !=
+   B) ==
+   C) ||
+   D) +
+Solve: D
+Explanation : উক্ত operator টি একটি Arithmetic Operator.  
+
+9. What will be the output of the following C code?
+ #include <stdio.h>
+    int main(){
+        int x = 5;
+        if (x < 10) {
+            printf("hello ");
+        }
+        if (x == 5) {
+            printf("hi");
+        }
+        else {
+            printf("no");
+        }
+    }
+ 
+    A) hello
+    B) hi
+    C) hello hi
+    D) hello no
+Solve: C
+Explanation: এখানে if else স্টেটমেন্ট গুলো বেসিক if else স্টেটমেন্ট.  প্রথম if statement টি True হয়েছে এবং এর ভিতরের কোডটি execute হয়েছে। এরপর পরের if statement টি True হয়েছে যার কারণে এর ভিতরের কোড গুলো execute হয়েছে।
+
+    
+10. Why do we need relational operators?
+    A) To add two numbers.
+    B) To compare values and perform logical operations on them.
+    C) To get the remainder of two numbers.
+    D) To check if both of the conditions are true.
+   
+Solve: B
+Explanation: দুই বা ততোধিক conditionals চেক করতে আমরা relational operator ব্যবহার করে থাকি। 
