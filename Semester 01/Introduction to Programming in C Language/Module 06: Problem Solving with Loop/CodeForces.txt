@@ -1,0 +1,72 @@
+G. Factorial: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/G
+
+#include <bits/stdc++.h>
+using namespace std;
+
+long long FACT(int N) {
+    long long fact = 1;
+    for (int i = 1; i <= N; i++) {
+        fact *= i;
+    }
+
+    return fact;
+}
+
+int main() {
+    int T, N;
+    cin >> T;
+
+    while (T--) {
+        cin >> N;
+        cout << FACT(N) << endl;
+    }
+
+    return 0;
+}
+
+K. Divisors: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    for(int i = 1; i <= N; i++){
+        if(N % i == 0) 
+            cout << i << endl;
+    }
+
+    return 0;
+}
+
+
+S. Sum of Consecutive Odd Numbers: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/S
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int x, y;
+        cin >> x >> y;
+
+        if (x > y) swap(x, y);
+
+        long long sum = 0;
+
+        for (int i = x + 1; i < y; i++) {
+            if (i % 2 != 0) {
+                sum += i;
+            }
+        }
+
+        cout << sum << endl;
+    }
+
+    return 0;
+}
