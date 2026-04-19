@@ -1,0 +1,32 @@
+A. Create A New String: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/A
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	string S, T;
+	cin >> S >> T;
+	cout << S.length() << " " << T.length() << endl;
+	cout << S << " " << T << endl;
+	return 0;
+}
+
+
+A. Square or rectangle: https://codeforces.com/group/MWSDmqGsZm/contest/329103/problem/A
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t, w, h;
+	cin >> t;
+	while(t--){
+	    cin >> w >> h;
+	    if(w==h){ cout << "Square" <<endl;}
+	    else {cout << "Rectangle" <<endl;}
+	}
+    return 0;
+}
+
+G. Conversion: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/G
+
+I. Palindrome: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/I
