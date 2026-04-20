@@ -1,0 +1,147 @@
+F. Reversing: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/F
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+	int N;
+	cin>>N;
+	long long A[N];
+	
+	for(int i=0; i<N; i++){
+	    cin>>A[i];
+	}
+	for(int i=N-1; i>=0; --i){
+	    cout<<A[i]<<" ";
+	}
+	
+	return 0;
+ 
+}
+
+G. Palindrome Array: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/G
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int N;
+    cin >> N;
+ 
+    long long A[N];
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+ 
+    for (int i = 0; i < N / 2; i++) {
+        if (A[i] != A[N - i - 1]) {
+            cout << "NO" << endl;
+            return 0;
+        }
+    }
+ 
+    cout << "YES" << endl;
+    return 0;
+}
+
+F. Way Too Long Words: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/F
+
+#include <stdio.h>
+ 
+int main() {
+    int T;
+    scanf("%d", &T);
+ 
+    while (T--) {
+        char str[101];
+        scanf("%s", str);
+        int length=0;
+        while(str[length]!='\0') {
+            length++;
+        }
+        if(length>10) {
+            printf("%c%d%c\n", str[0], length-2, str[length-1]);
+        }
+        else {
+            printf("%s\n", str);
+        }
+    }
+    return 0;
+}
+
+G. Conversion: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/G
+
+
+#include <stdio.h>
+ 
+int main() {
+    char S[100000];
+    scanf("%[^\n]", S);
+ 
+    for (int i=0; S[i]!='\0'; i++) {
+        if (S[i]== ',') {
+            S[i]=' ';
+        }
+        else if (S[i]>='a' && S[i]<='z') {
+            S[i]=S[i]-32;
+        } else if (S[i]>='A' && S[i]<='Z') {
+            S[i]=S[i]+32;
+        }
+    }
+    printf("%s\n", S);
+ 
+    return 0;
+}
+
+I. Palindrome: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/I
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char S[1001];
+    scanf("%s", S);
+
+    int n = strlen(S);
+    int isPalindrome = 1;
+
+    for(int i = 0; i < n / 2; i++) {
+        if(S[i] != S[n - i - 1]) {
+            isPalindrome = 0;
+            break;
+        }
+    }
+
+    if(isPalindrome)
+        printf("YES");
+    else
+        printf("NO");
+
+    return 0;
+}
+
+
+D. Strings: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/D
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string A, B;
+    cin >> A >> B;
+
+    // 1. Print sizes
+    cout << A.size() << " " << B.size() << endl;
+
+    // 2. Concatenate
+    cout << A + B << endl;
+
+    // 3. Swap first characters
+    char temp = A[0];
+    A[0] = B[0];
+    B[0] = temp;
+
+    cout << A << " " << B << endl;
+
+    return 0;
+}
