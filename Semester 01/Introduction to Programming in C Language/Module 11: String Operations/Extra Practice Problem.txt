@@ -1,0 +1,49 @@
+C. Compare: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/C
+
+Solve 01:[solve this with strcmp()]
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char X[21], Y[21];
+    scanf("%s %s", X, Y);
+    int cmp = strcmp(X, Y);
+    if(cmp<0) printf("%s", X);
+    else if(cmp>0) printf("%s", Y);
+    else if(cmp==0) printf("%s", X);
+	return 0;
+
+}
+
+Solve 02:[solve this without using strcmp()]
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string X, Y;
+    cin >> X >> Y;
+
+    if (X < Y) cout << X;
+    else cout << Y;
+
+    return 0;
+}
+
+
+Q3. Copy a string into another string without using strcpy()
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string source, dest;
+    cin >> source;
+
+    dest = source;  // direct copy
+
+    cout << dest;
+    return 0;
+}
