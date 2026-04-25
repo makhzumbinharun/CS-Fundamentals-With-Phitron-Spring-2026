@@ -1,0 +1,172 @@
+1. How many times “hi” will be printed for the following code snippet?
+for(int i=0; i<=10; i++)
+    {
+        printf("hi ");
+        if(i>2)
+        {
+            break;
+        }
+   }
+
+   A) 2
+   B) 3
+   C) 4
+   D) 10
+
+Explanation: লুপটি i=0 থেকে i=3 পর্যন্ত চলবে এবং i এর মান 0, 1, 2, 3 এর জন্য "hi" প্রিন্ট করবে।  যেহেতু, i=3 এ hi প্রিন্ট হওয়ার পরই break হয়, তাই 4 বার hi দেখা যাবে ( i>2 => 3>2 শর্ত সত্য তাই break দ্বারা লুপ থেকে বের হয়ে যাবে )।
+
+
+2. How many times (*) will be printed for the following nested loops?
+int i=3;
+while(i<=5)
+{
+     for(int j=0;j<i;j++)
+     {
+         printf("*");
+     }
+     i++;
+ }
+
+   A) 10
+   B) 7
+   C) 12
+   D) Infinite loop
+
+Explanation: 
+বাইরের লুপ (while): i=3 থেকে i=5 পর্যন্ত চলবে (৩ বার)।
+ভিতরের লুপ (for): 
+যখন i=3 তখন j=0 থেকে j<3 অর্থাৎ 3 বার * প্রিন্ট করবে
+যখন i=4 তখন j=0 থেকে j<4 অর্থাৎ 4 বার * প্রিন্ট করবে
+যখন i=5 তখন j=0 থেকে j<5 অর্থাৎ 5 বার * প্রিন্ট করবে
+
+মোট: 3 + 4 + 5 = 12 বার * প্রিন্ট করবে।
+
+
+3. How many times “#” will be printed for the following code snippet? 
+int i = -3;
+while(i<0)
+{
+    for(int j=0;j<5;j++)
+    {
+        printf("#");
+     }
+     i--;
+}
+
+   A) 0
+   B) 22
+   C) 5
+   D) Infinite loop
+
+Explanation:
+বাইরের লুপ (while): i=-3 দিয়ে শুরু, শর্ত i<0 (সত্য)। প্রতিবার i-- দ্বারা i এর মান কমছে (-3, -4, -5,...), তাই শর্ত i<0 সবসময় সত্য। 
+
+ভিতরের লুপ (for): প্রতিবার j=0 থেকে j<5 পর্যন্ত ৫ বার # প্রিন্ট করে।
+
+যেহেতু বাইরের লুপ কখনই মিথ্যা হবে না, তাই ইনফিনিটি # প্রিন্ট করবে। সুতরাং উত্তর Infinite loop  
+
+
+4. How many times “hi” will be printed for the following code snippet?
+for(int i = -4; i>=0; i++)
+    {
+        for(int j=5; j<2; j++)
+        {
+            printf("hi ");
+        }
+    }
+
+   A) 4
+   B) 12
+   C) 0
+   D) Infinite loop
+
+Explanation: 
+বাইরের for লুপ: i = -4 দিয়ে শুরু, শর্ত i >= 0 (-4 >= 0) অর্থাৎ মিথ্যা। তাই বাইরের লুপ একবারও চলবে না। 
+ভিতরের for লুপ: বাইরের লুপ চলেনি, তাই ভিতরের লুপ এক্সিকিউটই হবে না। 
+সুতরাং, প্রোগ্রামটি একবারও "hi" প্রিন্ট করবে না। কোনো আউটপুট দেখা যাবে না।
+
+
+5. Which one is an infinite loop?
+
+
+   A) for(int i=-4; i>=0; i--)
+   B) for(int i=-4; i<=0; i++)
+   C) for(int i=-4; i<=0; i--)
+   D) None 
+Explanation: for(int i=-4; i<=0; i--) লুপ এ i = -4 দিয়ে শুরু, শর্ত i <= 0 (-4 <= 0) সত্য। প্রতিবার i-- দ্বারা i এর মান কমবে (-5, -6, -7,...) এবং শর্ত i <= 0 যা  সর্বদাই সত্য হবে (যেহেতু i ক্রমাগত কমছে) তাই ইনফিনিটি লুপ হবে। 
+
+
+6. Write a loop that can print all values from 1 to 10 inclusive.
+A. for (int i = 0; i < 10; i++) { printf("%d ", i);}
+B. for (int i = 1; i < 10; i++) { printf("%d ", i);}
+C. for (int i = 1; i <= 10; i++) { printf("%d ", i);}
+D.  for (int i = 0; i <= 10; i++) { printf("%d ", i);}
+Explanation: for (int i = 1; i <= 10; i++) { printf("%d ", i);} এই লুপটি i=1 থেকে শুরু করে i<=10 শর্ত পর্যন্ত চলবে, ফলে 1 থেকে 10 পর্যন্ত সব সংখ্যা প্রিন্ট করবে।  
+i ) অপশন A ও B তে 10 বাদ পড়ে
+ii ) D তে 0 সহ প্রিন্ট হয়।
+
+
+7. Write a loop that can print all values from 1 to 10 exclusive.
+A. int i = 0; while (i < 10) { printf("%d ", i); i++; }
+B. int i = 1; while (i < 10) { printf("%d ", i); i++; }
+C. int i = 2; while (i < 10) { printf("%d ", i); i++; }
+D. int i = 2; while (i <= 10) { printf("%d ", i); i++; }
+
+Explanation: int i = 1; while (i < 10) { printf("%d ", i); i++; } এই লুপটি i=1 থেকে শুরু করে i<10 শর্ত পর্যন্ত চলবে, ফলে 1 থেকে 9 পর্যন্ত সংখ্যা প্রিন্ট করবে (10 exclusive) অর্থাৎ ১০ এখানে প্রিন্ট হবে না । 
+i) অপশন A তে ০ থেকে ৯ প্রিন্ট হয়
+ii) C তে ২ থেকে ৯
+iii) D তে ২ থেকে ১০ প্রিন্ট হয়।
+
+
+8. What will be the output of the following code snippet?
+for(int i=0;i<5;i++)
+    {
+        if(i==3)
+        {
+            continue;
+        }
+        printf("%d ",i);
+    }
+
+A. 0 1 2 3 4 5
+B. 0 1 2 4 5
+C. 0 1 2
+D. 0 1 2 4
+
+Explanation: i<5 শর্ত অনুযায়ী, লুপটি i=0 থেকে i=4 পর্যন্ত চলবে। যেহেতু লুপে i=3 হলে continue দেয়া আছে তাই এই  স্টেটমেন্টের কারণে 3 প্রিন্ট হবে না। তাই বাকি মানগুলো (0,1,2,4) প্রিন্ট হবে। 
+
+
+9. How many times “hi” will be printed for the following code snippet?
+for(int i=0; i<=10; i++)
+    {
+        if(i>2)
+        {
+            break;
+        }
+        printf("hi ");
+    }
+
+   A) 2
+   B) 3
+   C) 4
+   D) 10
+
+Explanation: লুপটি i=0,1,2 (৩ বার) চলবে, প্রতিবার "hi " প্রিন্ট করবে। যখন i=3 হবে (i>2 এই শর্তটি সত্য) তখন break স্টেটমেন্ট লুপ থামিয়ে দেবে। সুতরাং ৩ বার "hi " প্রিন্ট হবে।
+    
+10. How many times “hi” will be printed for the following code snippet?
+for(int i=0; i<=10; i++)
+    {
+        if(i>2)
+        {
+            continue;
+        }
+        printf("hi ");
+    }
+
+   A) 2
+   B) 3
+   C) 9
+   D) 10
+Explanation: লুপটি i=0,1,2 (৩ বার) চলবে এবং প্রতিবার "hi " প্রিন্ট করবে। তারপরও লুপ চলতে থাকবে i=3 থেকে i=10 পর্যন্ত, কিন্তু i এর মান 2 এর চেয়ে বড় হওয়ায় সবসময় continue স্টেটমেন্ট কাজ করবে যার ফলে বাকি লুপের জন্য  আর "hi " প্রিন্ট করা হবে না।
+
+
