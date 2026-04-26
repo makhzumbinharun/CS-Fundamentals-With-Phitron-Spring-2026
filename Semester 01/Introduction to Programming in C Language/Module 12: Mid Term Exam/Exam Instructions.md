@@ -1,54 +1,57 @@
-Introduction to Programming Language
+# Introduction to Programming Language  
+## Module Release – Module 12
 
-#Module_Release #Module_12
+The mid-assignment for the first course has arrived. This assignment is intended to evaluate what you have learned over the past three weeks. Like previous assessments, today’s assignment will also be conducted in contest format.
 
+If you have practiced the C programming concepts taught so far thoroughly, this contest should be easy for you. Keep in mind that it is completely normal if you cannot solve one or two problems in the contest—that is part of the learning process. There is no reason to be discouraged. However, if you cannot solve any problems at all, it likely means you have not practiced enough. In that case, practice more and then come back to the exam.
 
+**Warning:** Do not copy solutions. Even after repeated warnings, if you are caught copying, you may be permanently banned.
 
-চলে আসলো প্রথম কোর্সের মিড এসাইনমেন্ট। গত তিন সপ্তাহে কি কি শিখেছো সেটা যাচাই করার জন্য আজকের এই এসাইনমেন্ট। আজকের এসাইনমেন্টও কন্টেস্ট আকারে নেওয়া হবে। এই পর্যন্ত সি প্রোগ্রামিং এর যে যে কন্সেপ্টগুলো শিখেছো সেগুলো যদি খুব ভালোভাবে তুমি প্র্যাক্টিস করে থাকো তাহলে আজেকের কন্টেস্ট তোমার কাছে খুব সহজ হবে। আর মনে রাখবে কন্টেস্টে দুই একটা প্রবলেম তুমি নাও পারতে পারো। এটা পার্টঅফ লার্নিং। এতে হতাশ হওয়ার কিছু নাই। যদি একদমই না পারো তাহলে তুমি নিশ্চয়ই ভালোভাবে প্র‍্যাক্টিস করোনি। সো আরেকবার ভালোভাবে প্র‍্যাক্টিস করে তারপর এক্সামে আসো।
+---
 
-আর সাবধান!! কপি করতে যেওনা। বার বার নিষেধ করার পরও কপি করলে কিন্তু ধরা খেয়ে যাবা! আর তখন আজীবনের জন্য ব্যান!!
+## What You Need to Submit
 
+First, update your name and course email in your HackerRank profile. Then sign up using today’s contest link and participate in the contest.
 
+After finishing the contest, submit your **HackerRank profile link** and **username**.
 
-আজকে কি সাবমিট করবেঃ
+### Example
 
-প্রথমে hackerrank এর প্রোফাইলে তোমার নাম এবং কোর্সের ইমেইল সেট করে নিবে। তারপর আজকের কন্টেস্ট লিংকে গিয়ে সাইন আপ করে কন্টেস্টে অংশগ্রহন করবে। আর কন্টেস্ট শেষে তোমার hackerrank একাউন্ট এর প্রোফাইল লিংক এবং ইউজার নেইম সাবমিট করে দিবে।
+- https://www.hackerrank.com/DemoName  
+- @DemoName  
 
-For Example:
+---
 
-https://www.hackerrank.com/DemoName
+## Contest Link
 
-@DemoName
+https://www.hackerrank.com/contests/mid-term-a-introduction-to-c-programming-a-batch-09/challenges
 
+---
 
+## Exam Deadline
 
-Contest Link: https://www.hackerrank.com/contests/mid-term-a-introduction-to-c-programming-a-batch-09/challenges
+- **Submit by 25 April, 11:59 PM BDT** → Maximum Marks: **100**
+- **Submit by 26 April, 11:59 PM BDT** → Maximum Marks: **90**
+- **Submit any time after that** → Maximum Marks: **80**
 
+---
 
+## Important Instructions
 
-এক্সাম দেওয়ার ডেড লাইনঃ
+1. You must add the **same email and name** to your HackerRank profile that you used to enroll in the course. This step is mandatory. Failure to do so will result in **no marks**.
 
-25 April 11:59 PM BDT এর মধ্যে সাবমিট করলে তোমার সর্বোচ্চ মার্কস হবে 100
-26 April 11:59 PM BDT এর মধ্যে সাবমিট করলে তোমার সর্বোচ্চ মার্কস হবে 90
-আর এরপর যেকোন সময় জমা দিলে তোমার সর্বোচ্চ মার্কস হবে ৮০
+2. After submitting the exam, you **must not solve any additional problems**. Doing so will reduce your marks. Submit only when you are completely sure. Also, do not use any concept that has not yet been taught in the course.
 
+3. Do not copy code from anyone or anywhere, and do not use any unfair means. If copying is detected, you will receive **zero marks**, with no reconsideration. Both the copier and the person assisting in copying will receive zero. Access to the next semester will also be denied.
 
-গুরুত্বপূর্ন নির্দেশনাঃ
+4. Try to solve the questions calmly on your own. If needed, review previous modules and conceptual sessions. If you still cannot solve them, join the support session—only hints will be provided, not full solutions.
 
-১)প্রথমেই তোমাকে hackerrank এর প্রোফাইলে কোর্সে যে ইমেইল দিয়ে যুক্ত হয়েছো সেই ইমেইল এবং নাম এড করে নিতে হবে। এই কাজটা অব্যশই তোমাকে করতে হবে। না করলে কিন্তু মার্ক্স পাবে না।
+5. Do not ask for direct help related to the exam in the group. You may only ask for clarification about what a problem means. Posts asking how to solve a problem will be deleted.
 
-২) এক্সাম সাবমিট এর পর আর কোন প্রবলেম সলভ করা যাবেনা। যদি করো তাহলে মার্কস কম পাবে। তাই একদম সিউর হয়ে এক্সাম সাবমিট করতে হবে। আর কোর্সে এখানো শেখানো হয়নি এরকম কোন কিছু ইউস করা যাবেনা।
+6. Exam marks will be published within **7–10 days**. Do not post in the group asking when marks will be published or why someone else received marks before you.
 
-৩) অন্য কারো থেকে কিংবা কোথাও থেকে যেনো কোড কপি না করো/ অন্য কোন ধরনের অসুধ উপায় অবলম্বন করা যাবে না। যদি কপি করা এক্সাম ডিটেক্ট করা যায় তাহলে এক্সামের মার্ক্স শূন্য দেওয়া হবে। এরপর আর কোন কন্সিডার করা হবে না। এক্সাম কপিকারী এবং এক্সাম কপি করতে সাহায্যকারী দুই জনকেই শূন্য দেওয়া হবে। এবং পরবর্তী সেমিস্টারের এক্সেস দেওয়া হবেনা।
+7. After receiving your marks, do not post screenshots of your score in the group.
 
-৪) প্রশ্নগুলো ঠাণ্ডা মাথায় নিজে নিজে উত্তর দেওয়ার চেষ্টা করবে, প্রয়োজনে পূর্বের মডিউল ও কনসেপ্টচুয়াল সেশন দেখবে। এরপর ও না পারলে সাপোর্ট সেশনে জয়েন হবে তবে সেখানে হিন্টস দেওয়া হবে সল্যুশন বলে দেওয়া হবে না।
+8. If you have doubts regarding your marks, attend the support session for clarification. Avoid posting about it in the group.
 
-৫) গ্রুপে এক্সাম রিলেটেড সরাসরি হেল্প চাওয়া যাবে না। শুধুমাত্র প্রব্লেমটা কি বলতে চেয়েছে বোঝার জন্য পোস্ট করতে পারবে । কিভাবে সলভ করতে হবে এমন টাইপের পোস্ট করলে পোস্ট ডীলেট করে দেওয়া হবে। কারণ অনেকে পোষ্ট করে সলিউশন নিয়ে নেয়।
-
-৬) এক্সামের মার্ক্স ৭ - ১০ দিনের মধ্যে পেয়ে যাবে। এর মধ্যে এক্সামের মার্ক্স কবে পাবো সে পেয়েছে আমি পাইনি কেন এই ধরনের পোস্ট গ্রুপে দেওয়া থেকে বিরত থাকতে হবে।
-
-৭) এক্সামের মার্ক্স পাওয়ার পর আলহামদুলিল্লাহ এত মার্ক্স পেয়েছে মার্ক্সের স্ক্রিনশট সহ গ্রুপে পোস্ট করে এমন টাইপের পোস্ট করা যাবে না।
-
-৮) এক্সামের মার্ক্স রিলেটেড ডাউট থাকলে সাপোর্ট সেশনে গিয়ে ডাউট ক্লিয়ার করে নিবে, গ্রুপে পোস্ট না করাই উত্তম।
-
-৯) এক্সাম মার্কস রিলেটেড কোন কুয়েরি থাকলে ইমেইল করে দিতে হবে। গ্রুপে পোস্ট করলে ৫ মার্কস কেটে রাখা হবে ।
+9. For any queries regarding exam marks, send an email. Posting such queries in the group will result in a **5-mark deduction**.
