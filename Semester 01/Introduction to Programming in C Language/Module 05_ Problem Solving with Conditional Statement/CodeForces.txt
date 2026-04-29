@@ -1,0 +1,58 @@
+I. Welcome for you with Conditions: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/I
+#include<stdio.h>
+int main(){
+    int A, B;
+    scanf("%d %d", &A, &B);
+    A>=B ? printf("Yes"):printf("No");
+    return 0;
+}
+J. Multiples: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/J
+#include<stdio.h>
+int main(){
+    int A, B;
+    scanf("%d %d", &A, &B);
+    A%B==0 || B%A==0 ? printf("Multiples"):printf("No Multiples");
+    return 0;
+}
+P. First digit !: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/P
+#include<stdio.h>
+int main(){
+    char X;
+    scanf(" %c", &X);
+    X%2==0 ? printf("EVEN"):printf("ODD");
+    return 0;
+}
+N. Char: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/N
+#include<stdio.h>
+int main(){
+    char X;
+    scanf(" %c", &X);
+    X>='A' && X<='Z' ? printf("%c", X+32):printf("%c", X-32);
+    return 0;
+}
+M. Capital or Small or Digit: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/M
+#include<stdio.h>
+int main(){
+    char X;
+    scanf(" %c", &X);
+    if((X>='A' && X<='Z')|| (X>='a' && X<='z')){
+        printf("ALPHA\n");
+        if((X>='A' && X<='Z')) printf("IS CAPITAL\n");
+        else printf("IS SMALL\n");
+    }
+    else if((X>='0' && X<='9')) printf("IS DIGIT\n");
+    return 0;
+}
+K. Max and Min: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/K
+#include <stdio.h>
+
+int main() {
+    int A, B, C;
+    scanf("%d %d %d", &A, &B, &C);
+
+    int max = (A >= B && A >= C) ? A : (B >= C ? B : C);
+    int min = (A <= B && A <= C) ? A : (B <= C ? B : C);
+
+    printf("%d %d", min, max);
+    return 0;
+}

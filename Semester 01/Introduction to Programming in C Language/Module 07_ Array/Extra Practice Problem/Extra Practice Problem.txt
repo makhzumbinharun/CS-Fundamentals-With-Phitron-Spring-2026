@@ -1,0 +1,70 @@
+Take an array from input and print all the even numbers of that array.
+#include <stdio.h>
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	int arr[N];
+	for(int i=0; i<N; i++){
+	    scanf("%d", &arr[i]);
+	}
+	for(int i=0; i<N; i++){
+	  if(arr[i]%2==0)  printf("%d ", arr[i]);
+	}
+	return 0;
+
+}
+Take an array from input and count how many odd numbers are present in that array.
+#include <stdio.h>
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	int arr[N];
+	for(int i=0; i<N; i++){
+	    scanf("%d", &arr[i]);
+	}
+	int odd=0;
+	for(int i=0; i<N; i++){
+	  if(arr[i]%2!=0)  odd++;
+	}
+	printf("%d\n", odd);
+	return 0;
+
+}
+Take an array from input and print the maximum value of that array.
+#include <stdio.h>
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	int arr[N];
+	for(int i=0; i<N; i++){
+	    scanf("%d", &arr[i]);
+	}
+	int max=arr[0];
+	for(int i=0; i<N; i++){
+	  if(max<arr[i]) max=arr[i];
+	}
+	printf("%d\n", max);
+	return 0;
+
+}
+Take an array from input and print the minimum value of that array.
+#include <stdio.h>
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	int arr[N];
+	for(int i=0; i<N; i++){
+	    scanf("%d", &arr[i]);
+	}
+	int min=arr[0];
+	for(int i=0; i<N; i++){
+	  if(min>arr[i]) min=arr[i];
+	}
+	printf("%d\n", min);
+	return 0;
+
+}

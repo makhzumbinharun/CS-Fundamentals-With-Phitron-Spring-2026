@@ -1,0 +1,170 @@
+M. Replace MinMax: http://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/M
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    int A[N];
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+
+    int minPos = 0, maxPos = 0;
+
+    for (int i = 1; i < N; i++) {
+        if (A[i] < A[minPos]) minPos = i;
+        if (A[i] > A[maxPos]) maxPos = i;
+    }
+
+    swap(A[minPos], A[maxPos]);
+
+    for (int i = 0; i < N; i++) {
+        cout << A[i] << " ";
+    }
+
+    return 0;
+}
+
+Alternative:
+
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int A[N];
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    int minPos = 0, maxPos = 0;
+
+    for (int i = 1; i < N; i++) {
+        if (A[i] < A[minPos]) minPos = i;
+        if (A[i] > A[maxPos]) maxPos = i;
+    }
+
+    int temp = A[minPos];
+    A[minPos] = A[maxPos];
+    A[maxPos] = temp;
+
+    for (int i = 0; i < N; i++) {
+        printf("%d ", A[i]);
+    }
+
+    return 0;
+}
+
+F. Reversing: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/F
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int N;
+	cin>>N;
+	long long A[N];
+	
+	for(int i=0; i<N; i++){
+	    cin>>A[i];
+	}
+	for(int i=N-1; i>=0; --i){
+	    cout<<A[i]<<" ";
+	}
+	
+	return 0;
+
+}
+
+G. Palindrome Array: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/G
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    long long A[N];
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+
+    for (int i = 0; i < N / 2; i++) {
+        if (A[i] != A[N - i - 1]) {
+            cout << "NO" << endl;
+            return 0;
+        }
+    }
+
+    cout << "YES" << endl;
+    return 0;
+}
+
+I. Smallest Pair: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/I
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int N;
+        scanf("%d", &N);
+
+        long long A[N];
+        for (int i = 0; i < N; i++) {
+            scanf("%lld", &A[i]);
+        }
+
+        long long ans = A[0] + A[1] + 1;
+
+        for (int i = 0; i < N; i++) {
+            for (int j = i + 1; j < N; j++) {
+                long long sum = A[i] + A[j] + (j - i);
+                if (sum < ans) {
+                    ans = sum;
+                }
+            }
+        }
+
+        printf("%lld\n", ans);
+    }
+
+    return 0;
+}
+
+Alternative:
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<long long> A(N);
+        for (int i = 0; i < N; i++) {
+            cin >> A[i];
+        }
+
+        long long ans = LLONG_MAX;
+
+        for (int i = 0; i < N; i++) {
+            for (int j = i + 1; j < N; j++) {
+                long long value = A[i] + A[j] + (j - i);
+                ans = min(ans, value);
+            }
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
+}

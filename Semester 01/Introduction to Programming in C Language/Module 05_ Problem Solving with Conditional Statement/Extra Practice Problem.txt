@@ -1,0 +1,21 @@
+C. Simple Calculator: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/C
+#include <stdio.h>
+
+int main() {
+    long long X, Y;
+    scanf("%lld %lld", &X, &Y);
+    printf("%lld + %lld = %lld\n", X, Y, X+Y);
+    printf("%lld * %lld = %lld\n", X, Y, X*Y);
+    printf("%lld - %lld = %lld\n", X, Y, X-Y);
+    return 0;
+}
+D. Difference: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/D
+#include <stdio.h>
+
+int main() {
+    long long A, B, C, D;
+    scanf("%lld %lld %lld %lld", &A, &B, &C, &D);
+    long long X=(A*B)-(C*D);
+    printf("Difference = %lld\n", X);
+    return 0;
+}

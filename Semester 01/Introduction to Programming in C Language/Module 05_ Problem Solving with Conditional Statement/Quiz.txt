@@ -1,0 +1,262 @@
+1. If a = 5, b = 1, c = 3, Then what will be the output of the following code snippet?
+    if(a>b && b>c){
+        printf("%d",a);
+    }
+    else if(b>a && c>b){
+        printf("%d",b);
+    }
+    else{
+        printf("%d",c);
+    }
+
+   A) 5
+   B) 1
+   C) 3
+   D) 8
+Solve: C
+Explanation: if শর্ত (a>b && b>c) অর্থাৎ (5>1 && 1>3) → (true && false) → false ( তাই if ব্লক এক্সিকিউট হবে না )
+else if শর্ত (b>a && c>b) অর্থাৎ (1>5 && 3>1) → (false && true) → false ( তাই else if ব্লক এক্সিকিউট হবে না )
+তাই else ব্লক এক্সিকিউট হবে এবং c-এর মান 3 প্রিন্ট হবে।
+
+
+2. What will be the output of the following code?
+int main()
+{
+    int x = 1;
+    if (x < 5)
+    {
+        printf("hello");
+    }
+    if (x <= 10)
+    {
+        printf("hi");
+    }
+    else
+    {
+        printf("no");
+    }
+    return 0;
+}
+
+   A) hi
+   B) hello
+   C) hellohi
+   D) hellono
+Solve: C
+Explanation: যেহেতু x = 1, প্রথম if শর্ত (x < 5) সত্য, তাই "hello" প্রিন্ট হবে। দ্বিতীয় if শর্ত (x <= 10) ও সত্য, তাই "hi" প্রিন্ট হবে। else ব্লক কাজ করবে না, কারণ দ্বিতীয় if শর্ত কাজ করেছে। Final Output: hellohi
+
+
+3. If x = 4, Then what will be the output of the following code snippet? 
+
+    if(x%2!=0)
+    {
+        printf("Odd ");
+    }
+    else
+    {
+        printf("Even ");
+    }
+    if(x>0)
+    {
+        printf("Positive ");
+    }
+    else
+    {
+        printf("Negative ");
+    }
+
+   A) Odd Positive
+   B) Even Positive
+   C) Even Negative
+   D) Odd Negative
+Solve: B
+Explanation: যেহেতু x = 4, প্রথম if শর্ত x%2!=0 (4%2=0, তাই 0!=0 → মিথ্যা) → সুতরাং else ব্লক থেকে "Even " প্রিন্ট হবে।
+দ্বিতীয় if শর্ত x>0 (4>0 → সত্য) → "Positive " প্রিন্ট হবে। Final Output: Even Positive
+
+
+4. What will be the output of the following code?
+int main()
+{
+    int x = 0;
+    if (x == 1)
+    {
+        if (x == 0)
+        {
+            printf("inside if if\n");
+        }
+        else
+        {
+            printf("inside if else\n");
+        }
+    }
+    else
+    {
+        printf("inside else\n");
+    }
+}
+
+   A) inside if if
+   B) inside if else
+   C) inside else
+   D) if else
+Solve: C
+Explanation: যেহেতু x = 0, প্রথম if শর্ত (x == 1) মিথ্যা, তাই সরাসরি else ব্লকে যাবে (ভিতরের if-else ব্লক এক্সিকিউটই হবে না)।
+else ব্লক থেকে "inside else" প্রিন্ট হবে।
+
+5. If marks = 76, Then what will be the output of the following code snippet?
+    if(marks >= 80)
+    {
+        printf("A+");
+    }
+    else if(marks >= 70)
+    {
+        printf("A");
+    }
+    else if(marks >= 70)
+    {
+        printf("A-");
+    }
+
+   A) A+
+   B) A
+   C) A-
+   D) AA
+Solve: B
+Explanation: যেহেতু marks = 76, প্রথম if শর্ত marks >= 80 (76 ≥ 80) মিথ্যা।
+দ্বিতীয় else if শর্ত marks >= 70 (76 ≥ 70) সত্য, তাই "A" প্রিন্ট হবে।
+তৃতীয় else if শর্ত marks >= 70 একই থাকলেও আগেই দ্বিতীয় শর্ত সত্য হওয়ায় এটি চেকই হবে না।
+
+6. What is the output of the following code snippet?
+
+int num = 5;
+if (num > 10) {
+   printf("Greater than 10");
+} else if (num < 10) {
+   printf("Less than 10");
+} else {
+   printf("Equal to 10");
+}
+
+
+   A) Greater than 10
+   B) Less than 10
+   C) Equal to 10
+   D) Error
+Solve: B
+Explanation: যেহেতু num = 5, প্রথম শর্ত num > 10 (5 > 10) → মিথ্যা। else if শর্ত num < 10 (5 < 10) → সত্য → "Less than 10" প্রিন্ট হবে। else ব্লক এক্সিকিউট হবে না (কারণ else if সত্য হয়েছে)।
+
+
+7. If marks = 92, Then what will be the output of the following code snippet?
+    if(marks >= 80)
+    {
+        printf("A+");
+    }
+    if(marks >= 70)
+    {
+        printf("A");
+    }
+    if(marks >= 70)
+    {
+        printf("A-");
+    }
+
+   A) A+
+   B) A
+   C) A+A
+   D) A+AA-
+Solve: D
+Explanation: প্রথম if শর্ত marks >= 80 (92 ≥ 80) সত্য → তাই "A+" প্রিন্ট।
+দ্বিতীয় if শর্ত marks >= 70 (92 ≥ 70) সত্য → তাই "A" প্রিন্ট।
+তৃতীয় if শর্ত marks >= 70 (92 ≥ 70) সত্য → তাই "A-" প্রিন্ট।
+
+Final Output: A+AA- (সমস্ত সত্য শর্তের আউটপুট যুক্ত হবে)।
+
+8. What will be the output of the following C code?
+
+int main()
+{
+    int x = 0;
+    if (x == 1)
+    {
+        if (x >= 0)
+        {
+            printf("true\n");
+        }
+        else
+        {
+            printf("false\n");
+        }
+    }
+    return 0;
+}
+
+
+   A) true
+   B) false
+   C) depends on the compiler
+   D) No output
+Solve: D
+Explanation: যেহেতু x = 0, প্রথম if শর্ত (x == 1) মিথ্যা, তাই ভিতরের if-else ব্লক এক্সিকিউটই হবে না।
+যেহেতু, প্রথম if শর্ত এর জন্য কোনো else নাই এবং return 0 এর আগে কোনো প্রিন্ট স্টেটমেন্ট নেই। তাই, কোনো আউটপুট নেই (No output)।
+
+
+9. What will be the output of the following code snippet?
+    int x = 5;
+    int y = 4;
+    if(x>=y && x<y+4)
+    {
+        if(y<5)
+        {
+            printf("hi ");
+        }
+        if(y<10)
+        {
+            printf("hi ");
+        }
+    }
+    else
+    {
+        printf("hello ");
+    }
+
+ 
+    A) hi
+    B) hi hello
+    C) hello
+    D) hi hi
+Solve: D
+Explanation: যেহেতু x=5 এবং y=4, প্রথম if শর্ত (x>=y && x<y+4) → (5>=4 && 5<8) → (true && true) → true
+ভিতরের প্রথম if (y<5) → 4<5 → true → প্রথম "hi " প্রিন্ট
+ভিতরের দ্বিতীয় if (y<10) → 4<10 → true → দ্বিতীয় "hi " প্রিন্ট
+
+প্রথম if শর্ত এর else ব্লক এক্সিকিউট হবে না। তাই Final Output: hi hi
+
+10. What will be the output of the following code snippet?
+    int x = 5;
+    int y = 4;
+    if(x>=y && x<y+4)
+    {
+        if(y<5)
+        {
+            printf("hi ");
+        }
+        else if(y<10)
+        {
+            printf("hi ");
+        }
+    }
+    else
+    {
+        printf("hello ");
+    }
+
+ 
+    A) hi
+    B) hi hello
+    C) hello
+    D) hi hi
+Solve: A
+Explanation: প্রথম শর্ত (x>=y && x<y+4) → (5>=4 && 5<8) → true তাই ভিতরের শর্ত চেক করবে।
+ভিতরের if(y<5) → 4<5 → true → "hi " প্রিন্ট করবে। else if(y<10) স্কিপ হয় কারণ if ইতিমধ্যে সত্য হয়েছে। 
+
+সুতরাং, শুধুমাত্র একটি "hi " প্রিন্ট হবে।

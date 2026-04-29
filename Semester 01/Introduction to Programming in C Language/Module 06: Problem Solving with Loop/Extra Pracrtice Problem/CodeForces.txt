@@ -1,0 +1,69 @@
+G. Factorial: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/G
+
+#include <stdio.h>
+
+unsigned long long factorial(int n) {
+    unsigned long long fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() {
+    int T, N;
+    scanf("%d", &T);
+
+    for (int i = 0; i < T; i++) {
+        scanf("%d", &N);
+        printf("%llu\n", factorial(N));
+    }
+
+    return 0;
+}
+K. Divisors: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
+
+#include <stdio.h>
+ 
+int main() {
+    int N;
+    scanf("%d", &N);
+ 
+    for (int i = 1; i <= N; i++) {
+        if (N % i == 0) {
+            printf("%d\n", i);
+        }
+    }
+    return 0;
+}
+
+S. Sum of Consecutive Odd Numbers: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/S
+
+#include <stdio.h>
+ 
+int main() {
+    int T, X, Y;
+    scanf("%d", &T);
+ 
+    while (T--) {
+        scanf("%d %d", &X, &Y);
+ 
+        int sum = 0;
+        if (X < Y) {
+            for (int i = X + 1; i < Y; i++) {
+                if (i % 2 != 0)
+                    sum += i;
+            }
+        }
+        else {
+            for (int i = Y + 1; i < X; i++) {
+                if (i % 2 != 0)
+                    sum += i;
+            }
+        }
+ 
+        printf("%d\n", sum);
+    }
+ 
+    return 0;
+}
