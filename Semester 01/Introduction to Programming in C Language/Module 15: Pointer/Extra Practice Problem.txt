@@ -1,0 +1,5 @@
+Difference between pass by value and pass by reference
+Take 2 values as input and swap them using a function
+Take an array as input inside a function and then try to return it in the main function. [You won’t be able to return the array, just check it. In the upcoming courses we will learn how to return an array from a function]
+Take an array as input and then reverse it using a function
+Explain the calculation of how an array finds its 3rd index. [what will happen if we try to print a[3] ]
