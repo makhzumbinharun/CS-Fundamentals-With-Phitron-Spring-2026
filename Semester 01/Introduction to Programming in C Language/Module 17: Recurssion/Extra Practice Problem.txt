@@ -1,0 +1,4 @@
+A. Print Recursion: https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/A
+B. Print from 1 to N: https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/B
+C. Print from N to 1: https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/C
+F. Print Even Indices: https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/F
