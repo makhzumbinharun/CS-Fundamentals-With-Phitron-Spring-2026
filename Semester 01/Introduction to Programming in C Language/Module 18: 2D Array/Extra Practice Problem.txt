@@ -1,0 +1,12 @@
+T. Matrix: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/T
+Solution link: T Matrix: https://www.youtube.com/watch?v=qF4Q3tu-4-Y
+
+
+S. Search In Matrix: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/S
+Solution link: S Search In Matrix: https://www.youtube.com/watch?v=e_Syf4bDnaY
+
+
+Take input a matrix and check if it’s a scalar matrix or not. 
+
+
+Take input a matrix and check if it’s a unit matrix or not. 
