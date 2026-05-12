@@ -1,0 +1,4 @@
+K. Max Number: https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/K
+L. Summation: https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/L
+J. Lucky Division: https://codeforces.com/group/MWSDmqGsZm/contest/223206/problem/J
+B. Watermelon: https://codeforces.com/group/MWSDmqGsZm/contest/223206/problem/B
