@@ -1,0 +1,92 @@
+1. What is dynamic memory allocation in C++?
+A) Allocating memory at compile-time
+B) Allocating memory at runtime
+C) Allocating memory on the stack
+D) Allocating memory for local variables
+
+Explanation: Dynamic memory allocation হলো সেই প্রক্রিয়া যেখানে প্রোগ্রাম চলাকালীন (runtime) মেমোরি বরাদ্দ করা হয়। এর মাধ্যমে প্রোগ্রামার মেমোরির আকার ঠিক করতে পারেন এবং প্রয়োজন অনুযায়ী এটি বৃদ্ধি বা হ্রাস করতে পারেন। Static memory allocation compile-time-এ ঘটে এবং এর সাইজ পরিবর্তন করা যায় না।
+
+2. Which keyword is used to allocate dynamic memory in C++?
+A) new
+B) alloc()
+C) malloc()
+D) calloc()
+
+Explanation: C++-এ dynamic memory allocation-এর জন্য new কিওয়ার্ড ব্যবহার করা হয়। এটি একটি pointer রিটার্ন করে। malloc() এবং calloc() C ভাষায় ব্যবহৃত হয়। C++-এ new দেওয়া হয়।
+
+
+3 What is the correct way to create a dynamic integer array in C++?
+A) int array = new int[size];
+B) int* array = malloc(size);
+C) int* array = new int[size];
+D) int array[] = new int[size];
+
+Explanation: Dynamic array তৈরি করতে new কিওয়ার্ড এবং একটি pointer ব্যবহার করতে হয়। malloc() বা অন্য কোনো ফাংশন ব্যবহার C++-এ করা হয় না।
+
+
+4. How do you deallocate(delete from heap memory) an array from dynamic memory in C++?
+A) delete array_name
+B) free() array_name
+C) delete[] array_name
+D) delete array_name[]
+
+Explanation: Dynamic memory থেকে বরাদ্দকৃত array-কে মুছে ফেলার জন্য delete[] ব্যবহার করা হয়। delete শুধুমাত্র একটি সিঙ্গেল অবজেক্টের (যেমনঃ ভ্যারিয়েবল ) জন্য ব্যবহৃত হয়।
+
+
+5. How can you pass a dynamic array to a function as a parameter in C++?
+A) Pass it as value
+B) Pass it as a pointer
+C) Dynamic arrays cannot be passed to functions
+D) Pass it with return keyword
+
+Explanation: Dynamic array মূলত pointer দিয়ে কাজ করে, তাই এটি ফাংশনে পাস করতে হলে pointer পাস করতে হয়। ফলে ফাংশনের ভিতরে সরাসরি পরিবর্তন করা যায়।
+
+
+6. What is the advantage of using dynamic arrays over static arrays in C++?
+A) Dynamic arrays have a fixed size.
+B) Dynamic arrays are automatically deallocated.
+C) Dynamic arrays allow memory deletion and won’t remove automatically
+D) Static arrays are faster than dynamic arrays.
+
+Explanation: Dynamic array-এর প্রধান সুবিধা হলো এর মেমোরি runtime-এ বরাদ্দ করা হয় এবং মেমোরি পরবর্তী সময়ে মুছে ফেলা যায়। Static array-এর আকার compile-time-এ নির্ধারণ হয় এবং এটি পরিবর্তন করা যায় না।
+
+
+7. What is the purpose of the ternary operator in C++?
+A) Bitwise operations
+B) Arithmetic calculations
+C) Conditional expressions
+D) Loop control
+
+Explanation: Ternary operator একটি শর্ত পরীক্ষা করে এবং তার উপর ভিত্তি করে দুটি expression-এর মধ্যে একটি রিটার্ন করে। এটি if-else এর সংক্ষিপ্ত রূপ।
+
+
+
+8. What is the syntax of the ternary operator in C++?
+A) condition ? expression1 : expression2
+B) expression1 ? condition : expression2
+C) expression1 : expression2 ? condition
+D) condition : expression1 ? expression2
+
+Explanation: Ternary operator-এর সাধারণ গঠন হলো:
+condition ? expression1 : expression2
+যদি condition সত্য হয়, তবে expression1 রিটার্ন হবে; অন্যথায় expression2 রিটার্ন হবে।
+
+
+9. How can you return a dynamic array from a function in C++?(think deeply)
+a) Return the array directly
+b) Return a pointer to the array
+c) Return the dynamic memory directly
+d) Dynamic arrays cannot be returned from functions
+
+Explanation: Dynamic array return করতে pointer রিটার্ন করতে হয়। Dynamic memory allocation heap-এ ঘটে, তাই এটি ফাংশন থেকে রিটার্নের পরেও মেমোরিতে থাকে।
+
+
+10. Which operator is used to access elements of a dynamic array by index?
+a) .
+b) ->
+c) [ ]
+d) *
+
+Explanation: Dynamic array-এর element অ্যাক্সেস করতে [] অপারেটর ব্যবহার করা হয়।
+যেমনঃ arr[0] = 10;
+
