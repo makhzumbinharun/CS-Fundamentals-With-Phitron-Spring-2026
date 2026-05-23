@@ -1,0 +1,81 @@
+1. Which keyword is used to declare a class in C++?
+a) class
+b) struct
+c) object
+d) cls
+
+Explanation:  C++-এ class কিওয়ার্ড ব্যবহার করে একটি ক্লাস ডিক্লেয়ার করা হয়। একটি ক্লাস হলো অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিংয়ের (OOP) মূল ধারণা, যা ডেটা এবং ফাংশনগুলোকে একত্রে সংরক্ষন করে।
+
+2. Which access modifier will we use as the module says?
+a) private
+b) protected
+c) public
+d) static
+
+Explanation:  C++-এ public অ্যাক্সেস মডিফায়ার ব্যবহার করে ক্লাসের মেম্বারগুলোকে বাইরের কোড থেকে অ্যাক্সেসযোগ্য করা হয়।
+
+3. Which keyword is used to create a dynamic object of a class in C++?
+a) class
+b) new
+c) object
+d) create
+
+Explanation:  new কিওয়ার্ড C++-এ ডাইনামিক মেমোরি বরাদ্দ করার জন্য ব্যবহৃত হয়। এটি ক্লাসের ডাইনামিক অবজেক্ট তৈরি করতেও ব্যবহৃত হয়।
+
+4. Which operator is used to access the members of a static object in C++?
+a) ->
+b) .
+c) ::
+d) :
+
+Explanation:  স্ট্যাটিক অবজেক্টের মেম্বার অ্যাক্সেস করার জন্য ডট (.) অপারেটর ব্যবহার করা হয়।  -> এটি ডাইনামিক অবজেক্টের জন্য ব্যবহৃত হয়।
+
+5. Which operator is used to access the members of a dynamic object in C++?
+a) ->
+b) .
+c) ::
+d) :
+
+Explanation:  ডাইনামিক অবজেক্টের মেম্বার অ্যাক্সেস করার জন্য অ্যারো (->) অপারেটর ব্যবহৃত হয়।
+
+6. What is the size of an empty object in C++?
+a) 0 byte
+b) 4 bytes
+c) 8 bytes
+d) It can vary, but minimum 1 byte is required.
+Explanation:  C++-এ একটি খালি অবজেক্টের আকার কমপক্ষে ১ বাইট হতে হবে। কারণ এটি অবজেক্টের জন্য একটি অ্যাড্রেস প্রদান করে।
+
+
+
+7. Which function is automatically called when an object is created?
+a) main()
+b) start()
+c) constructor
+d) destructor
+
+Explanation:  ক্লাসের অবজেক্ট তৈরি হলে স্বয়ংক্রিয়ভাবে constructor ফাংশন কল হয়। এটি সাধারণত অবজেক্টের প্রাথমিককরণে ব্যবহৃত হয়।
+
+8. How to sort an array of integers named ar of size N in ascending order using sort function?
+a) sort(a,a+N)
+b) sort(ar,ar+5)
+c) sort(ar+N,ar)
+d) sort(ar,ar+N)
+
+Explanation:  sort(ar, ar+N) C++ STL ফাংশন ব্যবহার করে একটি অ্যারে ar এর প্রথম এবং শেষ ইন্ডেক্সের মধ্যে উপাদানগুলোকে ascending অর্ডারে সাজায়।
+
+9. How to sort an array of integers named ar of size N in descending order using sort function?
+a) sort(ar,ar+N,greater<int>)
+b) sort(ar,ar+N,greater<double>)
+c) sort(ar,ar+N,greater<int>())
+d) sort(ar,ar+N,greater<double>())
+
+Explanation:  Descending অর্ডারে সাজানোর জন্য sort ফাংশনের সাথে greater<int>() ফাংশন পাস করতে হয়।
+
+10. What is the name of this operator (->) in c++?
+a) narrow
+b) hyphen and angle bracket
+c) arrow
+d) right angle bracket
+
+Explanation:  -> অপারেটরকে arrow operator বলা হয়। এটি ডাইনামিক অবজেক্ট বা পয়েন্টার থেকে মেম্বার অ্যাক্সেস করার জন্য ব্যবহৃত হয়।
+
