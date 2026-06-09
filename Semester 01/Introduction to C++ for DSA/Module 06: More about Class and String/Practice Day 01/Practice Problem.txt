@@ -1,0 +1,11 @@
+Topics:
+String Class 
+Stringstream
+
+
+Codeforces Problem Links:
+U. New Words: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/U
+I. Palindrome: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/I
+V. Replace Word: https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/V
+A. Lucky?: https://codeforces.com/contest/1676/problem/A
+B. ICPC Balloons: https://codeforces.com/contest/1703/problem/B
