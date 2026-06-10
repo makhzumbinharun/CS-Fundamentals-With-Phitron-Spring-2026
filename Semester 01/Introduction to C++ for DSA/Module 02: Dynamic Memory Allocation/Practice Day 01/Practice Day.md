@@ -33,7 +33,6 @@ int main() {
 
 F. Reversing (solve using swap() function): https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/F
 <pre>
-	
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -50,13 +49,10 @@ int main() {
 	}
 	
 	return 0;
- 
-}
-			
+}	
 </pre>
 
 E. Max (solve using max() function): https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/E
-
 <pre>
 #include <stdio.h>
  
