@@ -2,6 +2,7 @@ Problem Sheet Doc File: https://docs.google.com/document/d/1oHwyJVnvl6wFvXi-NAKL
 
 
 M. Capital or Small or Digit: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/M
+<pre>
 #include<stdio.h>
 int main(){
     char X;
@@ -14,8 +15,10 @@ int main(){
     else if((X>='0' && X<='9')) printf("IS DIGIT\n");
     return 0;
 }
+</pre>
 
 C. Simple Calculator: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/C
+<pre>
 #include <stdio.h>
  
 int main() {
@@ -26,10 +29,11 @@ int main() {
     printf("%lld - %lld = %lld\n", X, Y, X-Y);
     return 0;
 }
-
+</pre>
 
 F. Reversing (solve using swap() function): https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/F
-
+<pre>
+	
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -48,10 +52,12 @@ int main() {
 	return 0;
  
 }
+			
+</pre>
 
+E. Max (solve using max() function): https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/E
 
-E. Max (solve using max() function)
-
+<pre>
 #include <stdio.h>
  
 int main() {
@@ -67,9 +73,10 @@ int main() {
     printf("%lld\n", max);
     return 0;
 }
+</pre>
 
 K. Max and Min: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/K
-
+<pre>
 #include <stdio.h>
  
 int main() {
@@ -82,3 +89,4 @@ int main() {
     printf("%d %d", min, max);
     return 0;
 }
+</pre>
