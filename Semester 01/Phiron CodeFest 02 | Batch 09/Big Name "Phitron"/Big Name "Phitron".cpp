@@ -1,22 +1,26 @@
-#include <iostream>
-#include <sstream>
-#include <string>
+3/21 test case failed
+    
+
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
     string s;
     getline(cin, s);
 
-    stringstream ss(s);
-
-    string word;
     int count = 0;
+    string word = "";
 
-    while (ss >> word)   {
-        for (int i = 0; i < word.size(); i++)word[i] = tolower(word[i]);
-        if (word == "phitron")count++;
-
+    for (char c : s){
+        if (isalpha(c)) word += tolower(c);
+        else        {
+            if (word == "phitron")
+                count++;
+            word = "";
+        }
     }
+
+    if (word == "phitron") count++;
 
     cout << count;
 
