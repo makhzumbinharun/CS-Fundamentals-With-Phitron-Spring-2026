@@ -1,0 +1,79 @@
+তোমরা recent যে ৩টা problem solve করেছো, সেগুলোর theory explanation এখানে দেওয়া আছে।
+
+এই explanation দেখার আগে তোমরা নিজেরা problem গুলো explain করার চেষ্টা করবে। তারপর এই explanation দেখে নিজের explanation-এর সাথে মিলিয়ে judge করবে কোথায় improve করা দরকার।
+
+Assignment 01-এ তোমাদের একটি problem দেওয়া হবে। তোমাদের একইভাবে problem-এর explanation দিতে হবে। এর জন্য marking করা হবে।
+
+তাই এখন থেকেই preparation নেওয়া শুরু করো।
+
+
+
+https://docs.google.com/document/d/1R4VdSkvWqOLw9kIOqds_A6yqJHDkMgIhlvIv0Hbkm-g/edit?usp=sharing
+
+
+
+
+তোমরা recent যে ৩টা problem solve করেছো, সেগুলোর theory explanation এখানে দেওয়া আছে।
+এই explanation দেখার আগে তোমরা নিজেরা problem গুলো explain করার চেষ্টা করবে। তারপর এই explanation দেখে নিজের explanation-এর সাথে মিলিয়ে judge করবে কোথায় improve করা দরকার।
+Assignment 01-এ তোমাদের একটি problem দেওয়া হবে। তোমাদের একইভাবে problem-এর explanation দিতে হবে। এর জন্য marking করা হবে।
+তাই এখন থেকেই preparation নেওয়া শুরু করো।
+
+Early_Certificates:
+Link: https://www.codechef.com/problems/EARLYWIN 
+Problem Short Summary:
+২টা string দেওয়া আছে। string ২টার শুরু থেকে যতগুলো letter match আছে তা প্রিন্ট করা লাগবে।
+
+Observation:
+২টা string length সমান হলে loop দিয়ে পুরোটা match করে print করলেই হবে। 
+String length সমান না হলে যার length ছোট সেটি পর্যন্ত match করে print করলেই হবে। 
+Left to Right Match করার সময় যদি কোথাও Unmatch পাওয়া যায় তাহলে আর next এ check করা লাগবে না। 
+
+
+
+Even Sum : 
+https://www.codechef.com/problems/EVENSUM1
+Question Analysis : 
+আমাকে একটা array দেওয়া আছে। আমি শুধুমাত্র একটা move/operation করতে পারব। move টা হলোঃ যেকোনো একটা index এর মান Ai choose করে সেটা array - থেকে remove করে দেওয়া। 
+আমাকে বলতে হবে, এরকম কোন Ai array তে আছে কিনা, যাকে remove করলে - বাকি মানগুলোর Sum/ যোগফল even হবে। 
+
+Testcase Analysis : 
+এই Testcase এর জন্য আমার Question Explanation : 
+5
+4 1 6 7 3
+
+যদি i=1 choose করি, তাহলে A1=4 ছাড়া বাকিগুলোর Sum = 1+6+7+3 = 17  - > ODD
+যদি i=2 choose করি, তাহলে A2=1 ছাড়া বাকিগুলোর Sum = 4+6+7+3 = 20  - > EVEN
+যদি i=3 choose করি, তাহলে A3=6 ছাড়া বাকিগুলোর Sum = 4+1+7+3 = 15  - > ODD
+যদি i=4 choose করি, তাহলে A4=7 ছাড়া বাকিগুলোর Sum = 4+1+6+3 = 14  - > EVEN
+যদি i=5 choose করি, তাহলে A5=3 ছাড়া বাকিগুলোর Sum = 4+1+6+7 = 18  - > EVEN
+
+এখানে, i= 2, 4, 5 - যেকোনো একটা remove করার জন্য Choose করলেই -> EVEN পাচ্ছি, তাই এই Testcase এর জন্য - Output হবে = YES
+
+
+Observation : 
+Remaining Sum = Total Sum - Ai
+Total Sum = A1+A2+A3………………..+An
+
+
+
+Easy Speaking : https://www.codechef.com/problems/EZSPK
+
+Question Analysis : 
+আমাকে একটা String দেওয়া আছে। আমাকে দেখতে হবে contiguous/ পর পর কমপক্ষে 4 টা consonant character আছে কিনা। থাকলে Yes , নাহলে No
+
+Observation : 
+vowel পাওয়ার মধ্যের consnant count করতে হবে। vowel count reset করতে হবে। 
+ 
+Testcase Analysis :
+এই Testcase এর জন্য আমার Question Explanation : 
+9
+worldview
+
+পর পর consonant গুলো হল - 
+w  	-> 1 টা
+rldv	-> 4 টা
+w	-> 1 টা 
+
+এখানে পর পর 4 টা consonant  পাওয়া গেছে। তাই output -> YES
+
+
