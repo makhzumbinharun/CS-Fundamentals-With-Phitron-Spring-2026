@@ -1,0 +1,82 @@
+1. What is the purpose of a prefix sum algorithm?
+a) Sorting an array
+b) Finding the maximum element in an array
+c) Calculating the cumulative sum of elements in an array
+d) Reversing an array
+
+Explanation: ক্রমযোজিত যোগফল (cumulative sum) বের করার মাধ্যমে কোনো রেঞ্জের যোগফল সহজে বের করার জন্য prefix sum algorithm ব্যবহার করা হয়। 
+
+2. What is the time complexity of calculating a prefix sum using a loop?
+a) O(n)
+b) O(log n)
+c) O(n^2)
+d) O(1)
+
+Explanation: 2 থেকে n পর্যন্ত একটি for loop চালানোর মাধ্যমে prefix sum array টি generate করা হয়ে থাকে। 
+
+3. What is the time complexity of calculating a range based sum from L to R using a prefix sum array?
+a) O(n)
+b) O(log n)
+c) O(n^2)
+d) O(1)
+
+Explanation: প্রিফিক্স সাম array টি generate করার পর শুধুমাত্র ঐ array টির ইন্ডেক্স এক্সেস করার মাধ্যমে আমরা একটি রেঞ্জের যোগফল O(1) কমপ্লেক্সিটি তে বের করে আনতে পারি । 
+
+4. What is the time complexity of binary search in the worst case?
+a) O(n)
+b) O(log n)
+c) O(n^2)
+d) O(1)
+
+Explanation: Binary search এর ক্ষেত্রে ম্যাক্সিমাম logN বার লুপ চললে একটি মান খুজে নেয়া যায় 
+
+5. Binary search can be applied to which of the following?
+a) Sorted arrays
+b) Unsorted arrays
+
+Explanation : যেহেতু একটি iteration এর পর ভ্যালুটি খুজে না পেলে আমরা ভ্যালুটির মান ছোট নাকি বড় তা কম্পেয়ার করে আমাদের সার্চ স্পেসটির বাম সাইড / ডান সাইড ইগ্নোর করি , তাই sorted array না হলে কোন সাইড ইগ্নোর করবো তা সিদ্ধান্ত নেয়া যাবে না।    
+
+6. In binary search, what is the index of the middle element in each iteration?
+a) (start + end) / 2
+b) (start + end) / 4
+c) (start + end) / 8
+d) (start + end) / (start - end)
+
+Answer: a) (start + end) / 2
+
+Explanation : মিডল ইন্ডেক্স পাওয়া যাবে start+end কে ২ দ্বারা ভাগ করার মাধ্যমে 
+
+7. In binary search, what is the condition for terminating the search if the target element is not found?
+a) When the start index becomes greater than the end index.
+b) When the start index becomes equal to the end index.
+c) When the middle element becomes equal to the target value.
+d) When the middle element becomes greater than the target value.
+
+Explanation : start index থেকে end index বড় হয়ে যাওয়া মানে হলো এই রেঞ্জ টি valid নয়। valid search space না হলে আমরা আমাদের সার্চ টি বন্ধ করে দিবো। 
+
+
+8. According to the module, what is the value of the first element in the prefix sum array?
+a) The sum of all elements in the original array
+b) 0
+c) The first element of the original array
+d) The last element of the original array
+
+Explanation : first index এর আগে যেহেতু কোনো ভ্যালু নেই , তাই এর আগের ভ্যালু থেকে শুরু করে ঐ ইন্ডেক্স এর ভ্যালুর যোগফল শুধুমাত্র প্রথম ইন্ডেক্স এর ভ্যালুই।
+
+
+9. In prefix sum, what is the value of the last element in the prefix sum array?
+a) The sum of all elements in the original array
+b) 0
+c) The first element of the original array
+d) The last element of the original array
+
+Explanation : যেহেতু লাস্ট ইন্ডেক্স এ থাকবে ১ম ইন্ডেক্স থেকে শুরু করে last index এর যোগফল , তাই পুরো array এর যোগফলটি last index এ স্টোর করা থাকে। 
+
+10. How can you tell if you found the target value in binary search?
+a) Check if the middle element is equal to the target value in every iteration.
+b) Count the number of iterations performed.
+c) Print all the elements of the array.
+d) Iterate over all of the elements and check.
+
+Explanation : middle element টি যদি কাঙ্খিত ভ্যালুটি হয় তবে আমরা বুঝতে পারবো আমাদের কাঙ্খিত ভ্যালুটি পাওয়া গেছে। 
+
