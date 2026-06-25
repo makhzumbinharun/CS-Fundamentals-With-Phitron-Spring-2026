@@ -1,0 +1,126 @@
+1. What will be the output of the v[3] of the following code snippet?
+int a[4] = {12,13,14,15};
+vector<int> v(a, a+4);
+12
+14
+13
+15
+Explanation:
+এখানে, a একটি অ্যারে যার মান {12, 13, 14, 15}। এরপর v নামে একটি vector তৈরি করা হয়, যা a অ্যারের প্রথম উপাদান থেকে শুরু হয়ে শেষ উপাদান পর্যন্ত (অর্থাৎ a+4 পর্যন্ত) মান গুলি ধারণ করবে।
+v[0] = 12
+v[1] = 13
+v[2] = 14
+v[3] = 15
+তাহলে, v[3] এর মান হবে 15, কারণ v[3] তে a অ্যারের চতুর্থ উপাদান থাকবে, যা 15।
+উত্তর: 15
+
+2. How do you add an element to the end of a vector in C++?
+a) v.add(element);
+b) v.insert(element);
+c) v.push_back(element);
+d) v.append(element);
+
+Explanation:
+push_back() ফাংশনটি একটি vector এর শেষে একটি নতুন উপাদান যোগ করে।
+
+3. Which of the following functions is used to check if a vector is empty?
+a) size()
+b) capacity()
+c) empty()
+d) clear()
+
+Explanation: 
+empty() ফাংশনটি একটি vector এর ভিতরে কোনও উপাদান আছে কিনা তা চেক করে। যদি vector খালি থাকে, এটি true রিটার্ন করে; অন্যথায় false রিটার্ন করে।
+
+
+
+
+
+
+
+
+
+4. What will be the output of the following code if we print the vector?
+    vector<int> v={1,2,3,4};
+    v.resize(2);
+    v.resize(4);
+1 2 3 4
+1 2 3 0
+1 2 0 0
+0 0 0 0
+Explanation:
+প্রথমে v ভেক্টরটি {1, 2, 3, 4} দিয়ে শুরু হয়।
+v.resize(2) কল করার পর, ভেক্টরের আকার ২ এ পরিবর্তিত হয়, এবং এখন এটি {1, 2} হবে। অতিরিক্ত উপাদানগুলো (৩ ও ৪) মুছে ফেলা হয়।
+এরপর v.resize(4) কল করা হয়, যা ভেক্টরের আকার ৪ হয়। কিন্তু এখানে কোনো নতুন উপাদান সরাসরি প্রদান করা হয়নি, তাই স্বয়ংক্রিয়ভাবে নতুন উপাদানগুলির মান 0 হয়ে যাবে। ফলে ভেক্টরটি {1, 2, 0, 0} হবে।
+
+উত্তর: 1 2 0 0 
+
+5. Which function would you use to delete the last element of a vector in C++?
+a) erase()
+b) pop_back()
+c) clear()
+d) remove()
+Explanation:
+pop_back() ফাংশনটি vector এর শেষ উপাদানটি মুছে ফেলে। এটি vector এর আকার এক করে কমিয়ে দেয় 
+
+6. Which is the right code for inserting 20 in index 3?
+v.insert(v.begin()+3, 20);
+v.insert(v.begin()+2, 20);
+v.insert(3, 20);
+v.insert( 20,v.begin()+3);
+Explanation:
+ধরা যাক, আপনি vector তে ইনডেক্স ৩-এ ২০ add করতে চান। সঠিক কোড হবে:
+v.insert(v.begin() + 3, 20);
+এখানে, v.begin() হচ্ছে vector এর প্রথম উপাদানের iterator এবং v.begin() + 3 হবে ইনডেক্স ৩ এর 
+iterator। insert() ফাংশনটি নির্দিষ্ট iterator এর অবস্থানে ২০ add করবে।
+
+অন্য অপশনগুলি ভুল:
+v.insert(v.begin() + 2, 20); এটি ইনডেক্স ২ তে ২০ add করবে।
+v.insert(3, 20); এটি ভুল সিনট্যাক্স, কারণ insert() ফাংশনটি প্রথম আর্গুমেন্ট হিসেবে iterator এবং  দ্বিতীয় আর্গুমেন্ট হিসেবে মান গ্রহণ করে।
+v.insert(20, v.begin() + 3); এটি ভুল, কারণ প্রথম আর্গুমেন্টে মান (২০) এবং দ্বিতীয় আর্গুমেন্টে iterator দেওয়া হয়েছে, যা সঠিক নয়।
+7. What will be the output after printing the vector?
+    vector<int> v={1,2,3,4,5};
+    v.erase(v.begin()+2, v.end());
+1 2 3
+1 2 5
+1 2 4
+1 2
+Explanation:
+প্রথমে ভেক্টর v এর মান {1, 2, 3, 4, 5}।
+
+এরপর v.erase(v.begin() + 2, v.end()) কল করা হচ্ছে:
+v.begin() + 2 মানে 3 (যেহেতু ইনডেক্স 0 থেকে শুরু হয়)।
+v.end() হলো শেষের পরবর্তী point।
+erase ফাংশনটি 3, 4, এবং 5 উপাদানগুলো মুছে দেয়।
+ফলে, শেষে ভেক্টরটি হবে {1, 2}।
+
+8. How can we get the last element of a vector?
+v[v.size()]
+v[v.size()-1]
+v.back()
+Option b and c
+Explanation:
+v[v.size() - 1]: এটি সঠিক। v.size() - 1 হল ভেক্টরের শেষ উপাদানের ইনডেক্স। তাই এটি শেষ উপাদানটি রিটার্ন করবে।
+v.back(): এটি আরও সঠিক ও সহজ উপায়। back() ফাংশনটি সরাসরি ভেক্টরের শেষ উপাদানটি রিটার্ন করে।
+
+9. How do you iterate over the elements of a vector using a range-based for loop in C++?
+a) for (int i = 0; i < v.size(); i++)
+b) for (data_type element : v)
+c) for (int i = 0; i <= v.size(); i++)
+d) None of the above
+Explanation:
+রেঞ্জ-বেসড ফর লুপে, data_type হল ভেক্টরের উপাদানের টাইপ, এবং element হল প্রতিটি উপাদান যা ভেক্টর v থেকে এক এক করে নেয়া হয়।
+
+
+
+
+
+
+10. What will be the time complexity of sorting a vector using the built in sort() function?
+O(1)
+O(NlogN)
+O(logN)
+O(N*N)
+
+Explanation:
+C++ এ ort() ফাংশন এর টাইম কমপ্লেক্সিটি O(N log N)। 
