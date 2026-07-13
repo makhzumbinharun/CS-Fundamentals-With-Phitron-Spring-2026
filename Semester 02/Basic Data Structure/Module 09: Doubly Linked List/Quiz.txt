@@ -1,0 +1,98 @@
+Which of the following statements is true about a doubly linked list? 
+a) It can only be traversed in one direction.
+b) It can be traversed in both directions. 
+c) It can only store integers. 
+d) It has a fixed size.
+
+Explanation:  Doubly Linked List একটি বিশেষ লিংকড লিস্ট যেখানে প্রতিটি নোডে দুইটি পয়েন্টার থাকে:
+একটি আগের নোডে (prev) নির্দেশ করে।
+অন্যটি পরবর্তী নোডে (next) নির্দেশ করে।
+এই কারণে ডাবলি লিংকড লিস্ট উভয় দিক থেকে ট্রাভার্স করা সম্ভব হয়। এটি integer ছাড়াও যেকোনো ডেটা টাইপ ধারণ করতে পারে এবং এর সাইজ fixed নয়।
+
+
+    2. In a doubly linked list, which pointer of the last node is NULL? 
+a) prev 
+b) next 
+c) both prev and next 
+d) none of the above 
+
+Explanation:  Doubly Linked List  এ শেষ নোডের পরে কোনো নোড থাকে না। তাই শেষ নোডের next পয়েন্টারটি NULL সেট করা হয়। তবে prev পয়েন্টারটি শেষ নোডের আগের নোডকে নির্দেশ করে।
+
+In a doubly linked list, each node contains: 
+a) Only a link to the next node. 
+b) Only a link to the previous node. 
+c) Both a link to the next and previous nodes. 
+d) A link to the first node in the list.
+
+Explanation: Doubly Linked List  এ  প্রতিটি নোডে দুটি পয়েন্টার থাকে:
+prev: আগের নোড নির্দেশ করে।
+next: পরবর্তী নোড নির্দেশ করে।
+এই কারণে Doubly Linked List  এ  উভয় দিক থেকে ট্রাভার্স করা যায় এবং বিভিন্ন অপারেশন সহজ হয়।
+
+
+Which of the following is the time complexity for inserting a node at the beginning of a doubly linked list? 
+a) O(1) 
+b) O(n) 
+c) O(log n) 
+d) O(n^2)
+
+Explanation:  Doubly Linked List  এ insertion এর সময় head পয়েন্টারকে নতুন নোডের দিকে point করা হয় এবং নতুন নোডের next পয়েন্টার পুরানো head-এর দিকে সেট করা হয়। এই অপারেশনটি constant time-এ সম্পন্ন হয়। তাই টাইম কমপ্লেক্সিটি O(1)।
+
+Deleting the last node in a doubly linked list takes: 
+a) O(1) time 
+b) O(n) time 
+c) O(log n) time 
+d) O(n^2) time
+Explanation:  Doubly Linked List  এ  শেষ নোডে সরাসরি অ্যাক্সেস করা সম্ভব যদি আমাদের কাছে tail pointer থাকে। prev পয়েন্টার ব্যবহার করে এর আগের নোডের next পয়েন্টারটি NULL সেট করে, এবং শেষ নোডটি মুছে ফেলা হয়। এটি constant time-এ করা যায়, তাই টাইম কমপ্লেক্সিটি O(1)।
+
+6. Which of the following is the correct way to check if a doubly linked list is empty? 
+a) Check if the head is null 
+b) Check if the tail is null 
+c) Both a and b
+d) Check if both the head and tail are non-null
+
+Explanation:  Doubly Linked List   খালি হলে head এবং tail পয়েন্টার NULL হবে।
+
+The process of inserting a new node after a specific node in a doubly linked list involves: 
+a) Changing the link of the previous node 
+b) Changing the link of the next node 
+c) Changing the links of both the previous and next nodes 
+d) No change in the links of other nodes
+
+Explanation:  একটি নির্দিষ্ট নোডের পরে নতুন নোড যোগ করার জন্য:
+
+নতুন নোডের prev বর্তমান নোডের দিকে সেট করা হয়।
+নতুন নোডের next বর্তমান নোডের পরবর্তী নোডের দিকে সেট করা হয়।
+বর্তমান নোডের next এবং পরবর্তী নোডের prev নতুন নোডের দিকে সেট করা হয়।
+
+8. Which of the following is not an advantage of using a doubly linked list over a singly linked list? 
+a) Can be traversed in both directions 
+b) Supports efficient insertion and deletion at the beginning 
+c) Requires less memory space 
+d) Allows easy removal of a node without traversing the entire list
+
+Explanation:  Doubly Linked List  এর প্রতিটি নোডে দুটি পয়েন্টার থাকে (prev এবং next), যা অতিরিক্ত মেমরি দখল করে। এই কারণে এটি singly linked list থেকে বেশি মেমরি ব্যবহার করে।
+
+9. The process of inserting a new node at the end of a doubly linked list involves: 
+a) Insert new node before the tail node 
+b) Insert new node after the tail node
+c) Insert new node before the head node 
+d) No change in the links of other nodes
+
+Explanation:  নতুন নোড tail পয়েন্টারের পরে ইনসার্ট করা হয় এবং tail pointer নতুন নোডের দিকে নির্দেশ করা হয়।
+
+
+10. The process of deleting a node from a doubly linked list involves: 
+a) Changing the link of the previous node 
+b) Changing the link of the next node 
+c) Changing the links of both the previous and next nodes 
+d) No change in the links of other nodes
+
+Explanation:  ডাবলি লিংকড লিস্টে একটি নোড মুছে ফেলার জন্য:
+
+prev পয়েন্টার পরিবর্তন করে আগের নোডকে পরবর্তী নোডের সাথে যুক্ত করা হয়।
+next পয়েন্টার পরিবর্তন করে পরবর্তী নোডকে আগের নোডের সাথে যুক্ত করা হয়।
+অবশেষে নির্দিষ্ট নোডটি ডিলিট করা হয়।
+
+
+
