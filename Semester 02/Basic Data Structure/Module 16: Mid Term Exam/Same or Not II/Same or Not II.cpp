@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+const int MAX = 1000005;
 
 class Stack{
 public:
-    int arr[1005];
+    int arr[MAX];
     int topIndex = -1;
 
     void push(int x){
@@ -25,7 +26,7 @@ public:
 
 class Queue{
 public:
-    int arr[1005];
+    int arr[MAX];
     int frontIndex = 0, rearIndex = 0;
 
     void push(int x) {
